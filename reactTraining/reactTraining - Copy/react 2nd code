@@ -1,0 +1,4 @@
+react 2nd video:
+-> instead of class we use className property.
+for styling imported boostrap & Jquery.
+ npm install boostrap

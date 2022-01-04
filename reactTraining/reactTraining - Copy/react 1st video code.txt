@@ -1,0 +1,51 @@
+React 1st video :
+
+parent component- APP
+sending values to child comp  and and printing in parent component
+code:
+class App extends Compponent{
+constructor(props){
+super(props);
+this.state.employee={"name":"saiChandu","dept":"HR"}
+}
+or
+state={
+employee:{"name":"saiChandu","dept":"HR"}
+}
+render(){
+return( 
+<div class="App"> 
+Employee List :
+<Employee employee={this.state.employee}/>
+</div>
+)
+}
+}
+export default App
+---------------------------------------------
+child component:
+getting values from parent class.
+
+code:
+const Employee = (props) =>{
+return(
+<div>
+Employee Name : {props.employee.name}
+Employee dept : {props.employee.dept}
+</div>
+)
+}
+export default Employee 
+---------------------------------------------
+class component contains render method.(App)
+functional component does'nt have render method(Employye.js)
+lifecycle will be there for class component not for functional component.
+To pass values from parent to child we use props.
+if we are creating functional compnent we need to export it.
+
+
+
+
+
+
+
